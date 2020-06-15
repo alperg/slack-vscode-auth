@@ -1,0 +1,29 @@
+{
+  "name": "slack-vscode-auth",
+  "version": "0.0.1",
+  "description": "Slack-VSCode OAuth Provider",
+  "main": "server.js",
+  "scripts": {
+    "start": "env NODE_ENV=prod pm2 start server.js --name \"slack-vscode-oauth\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alperg/slack-vscode-auth.git"
+  },
+  "keywords": [
+    "slack",
+    "vscode",
+    "slack-vscode",
+    "oauth"
+  ],
+  "author": "Alper Gokcehan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alperg/slack-vscode-auth/issues"
+  },
+  "homepage": "https://github.com/alperg/slack-vscode-auth#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
+}
