@@ -7,6 +7,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.get('/auth/redirect', (req, res) =>{
+    console.log(process.env.CLIENT_ID);
+    console.log(process.env.CLIENT_SECRET);
+    console.log(process.env.REDIRECT_URI);
     const options = {
         uri: 'https://slack.com/api/oauth.access?code='
             +req.query.code+
